@@ -5,6 +5,9 @@ UI design Link : https://www.figma.com/file/t1VzyfA3QPJCC0Ud7OZC6Y/sign-up-3?nod
 
 # Built with
 HTML.
+
 CSS.
+
 Javascript.
+
 Figma for the UI.
