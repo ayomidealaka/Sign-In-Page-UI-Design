@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head></head>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body onload="disableSubmit()">
+    <script>
+        function disableSubmit() {
+            document.getElementById("submit").disabled = true;
+        }
+
+        function activateButton(element) {
+
+            if (element.checked) {
+                document.getElementById("submit").disabled = false;
+            } else {
+                document.getElementById("submit").disabled = true;
+            }
+
+        }
+    </script>
+    <div class="body">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <!--Signup-->
+                    <h1>Sign In</h1>
+                    <br>
+                    <input type="email" placeholder="Email" required/>
+                    <input type="password" placeholder="Password" required/>
+                    <input type="checkbox" name="terms" id="terms-box" onchange="activateButton(this)"><span class="terms1">Remember me</span>
+                    <br>
+                    <button>Sign In</button>
+                    <a id="forgot-password" href="#">Forgot password?</a>
+                    <p>or Sign In using</p>
+                    <div class="social-div">
+                        <ul>
+                            <li>
+                                <a href="google.com"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+                <br>
+                <br>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <!--SignUp-->
+                    <h1>Sign Up</h1>
+                    <br>
+                    <input type="text" placeholder="Name" required/>
+                    <input type="Email" placeholder="Email" required/>
+                    <input type="password" placeholder="Password" required/>
+                    <input type="password" placeholder="Repeat Password" required/>
+                    <input type="checkbox" name="terms" id="terms-box" onchange="activateButton(this)"> <span class="terms">I agree all statements in<a href="#">Terms of service.</a></span>
+                    <!--<div class="TOS">
+                        <ul>
+                            <li>
+                                <input id="checkbox" type="checkbox" name="Terms of Service" placeholder="" />
+                            </li>
+                            <li>
+                                <p>I agree all statements in <a id="TOS" href="#">Terms of service.</a></p>
+                            </li>
+                        </ul>
+                    </div>-->
+                    <button id="signupButton">Sign Up</button>
+                    <p>or Sign up using</p>
+                    <div class="social-div">
+                        <ul>
+                            <li>
+                                <a href="google.com"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+
+
+            </div>
+            <!--Signup Message-->
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1></h1>
+                        <p id="change">To stay connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <!--SignIn-->
+                    <div class="overlay-panel overlay-right">
+                        <h1></h1>
+                        <p>Enter your personal details and start your journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
